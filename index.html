@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>. . : : Graphically Insane : : . .</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+<link href="css/fonts.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.js"></script>
+</head>
+
+<body>
+<div id="header">
+  <div class="follow">Follow me on LinkedIn</div>
+  <div class="version">Version 2.0</div>
+  <div id="banner"><img src="images/logo.png" alt="Graphically Insane" width="425" height="41" /></div>
+  <div id="mainNavigation">
+    <div class="navigationSlider">
+      <div class="navItem" id="navHome"><a href="#">
+        <div class="TLcorner"></div>
+        <div class="TRcorner"></div>
+        <div class="navText">Home</div>
+        <div class="BLcorner"></div>
+        <div class="BRcorner"></div>
+        </a> </div>
+      <div class="navItem" id="navPortfolio"><a href="#">
+        <div class="TLcorner"></div>
+        <div class="TRcorner"></div>
+        <div class="navText">Portfolio</div>
+        <div class="BLcorner"></div>
+        <div class="BRcorner"></div>
+        </a> </div>
+      <div class="navItem" id="navSkills"><a href="#">
+        <div class="TLcorner"></div>
+        <div class="TRcorner"></div>
+        <div class="navText">Skills</div>
+        <div class="BLcorner"></div>
+        <div class="BRcorner"></div>
+        </a> </div>
+      <div class="navItem" id="navBio"><a href="#">
+        <div class="TLcorner"></div>
+        <div class="TRcorner"></div>
+        <div class="navText">Bio</div>
+        <div class="BLcorner"></div>
+        <div class="BRcorner"></div>
+        </a> </div>
+      <div class="navItem" id="navContact"><a href="#">
+        <div class="TLcorner"></div>
+        <div class="TRcorner"></div>
+        <div class="navText">Contact</div>
+        <div class="BLcorner"></div>
+        <div class="BRcorner"></div>
+        </a> </div>
+      <div class="navBg"></div>
+    </div>
+  </div>
+</div>
+<div id="main">
+  <div class="mainContentArea"><div class="mainSlider">
+    <div class="home">Home</div>
+    <div class="portfolio">Portfolio</div>
+    <div class="skills">Skills</div>
+    <div class="bio">Bio</div>
+    <div class="contact">Contact</div>
+    </div>
+  </div>
+</div>
+<div id="footer">
+  <div class="follow">test</div>
+  <div class="version">Copyright&copy; Graphically Insane</div>
+</div>
+
+<script>
+
+$("#navHome").click(function(){
+	var xVar = this.offsetLeft + 3; 
+  	$(".navBg").animate({"left": xVar+"px"}, "slow");
+	 $(".mainSlider").animate({"left": "0px"}, "slow");
+	currClick = this
+});
+$("#navPortfolio").click(function(){
+	var xVar = this.offsetLeft + 3; 
+  	$(".navBg").animate({"left": xVar+"px"}, "slow");
+	$(".mainSlider").animate({"left": "-752px"}, "slow");
+	currClick = this
+});
+$("#navSkills").click(function(){
+	var xVar = this.offsetLeft + 3; 
+  	$(".navBg").animate({"left": xVar+"px"}, "slow");
+	$(".mainSlider").animate({"left": "-1504px"}, "slow");
+	currClick = this
+});
+$("#navBio").click(function(){
+	var xVar = this.offsetLeft + 3; 
+  	$(".navBg").animate({"left": xVar+"px"}, "slow");
+	$(".mainSlider").animate({"left": "-2256px"}, "slow");
+	currClick = this
+});
+$("#navContact").click(function(){
+	var xVar = this.offsetLeft + 3; 
+  	$(".navBg").animate({"left": xVar+"px"}, "slow");
+	$(".mainSlider").animate({"left": "-3008px"}, "slow");
+	currClick = this
+});
+$(document).ready(function(){
+	var xVar3 = document.getElementById('navHome').offsetLeft + 3;
+	var yVar3 = document.getElementById('navHome').offsetTop + 1;
+	$(".navBg").animate({"top": yVar3+"px"}, 0);
+  	$(".navBg").animate({"left": xVar3+"px"}, "slow");
+});
+$(window).resize(function() {
+	var xVar2 = currClick.offsetLeft + 3;
+  $(".navBg").animate({"left": xVar2+"px"},0);
+});
+
+
+  </script>
+</body>
+</html>

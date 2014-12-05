@@ -1,0 +1,244 @@
+@charset "UTF-8";
+body {
+	background-color:#000000;
+	margin:0px;
+	color:#bdb6a2;
+	font-family:bankGothic, Verdana, Geneva, sans-serif;
+	font-size:13px;
+}
+
+#header {
+	width:100%;
+	height:93px;
+	margin-top:20px;
+	border:#333;
+	border-bottom-style:solid;
+	border-top-style:solid;
+	border-bottom-width:thin;
+	border-top-width:thin;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+#banner {
+	background-image:url(../images/banner.jpg);
+	background-repeat:repeat-x;
+	height:53px;
+	border:#333333;
+	border-bottom-style:dotted;
+	border-top-style:dotted;
+	border-bottom-width:thin;
+	border-top-width:thin;	
+	text-align:center;
+	vertical-align:middle;
+	overflow:hidden;
+	position:relative;
+}
+#banner img{
+	margin-top:6px;
+	border:none;
+	vertical-align:middle;
+}
+#mainNavigation{
+	text-align:center;
+	height:25px;
+	margin-left:auto;
+	margin-right:auto;
+	width:720px;
+	vertical-align:middle;
+}
+.navigationSlider {
+	width:720px;
+}
+#main {
+	margin-top:15px;
+	background:url(../images/mainBg.jpg);
+	background-repeat:repeat-x;
+	border:#333333;
+	border-bottom-style:solid;
+	border-top-style:solid;
+	border-bottom-width:thin;
+	border-top-width:thin;	
+	width:100%;
+	height:482px;
+	overflow:hidden;
+	text-align:center;
+	padding:0px;	
+}
+#footer {
+	width:100%;
+	margin:0px;
+	padding-top:10px;
+	border-bottom-style:solid;
+	border-bottom-width:thin;
+}
+
+.follow {
+	margin-bottom:0px;
+	padding:0px;
+	height:13px;
+	margin-left:85px;
+	width:300px;
+	display:inline;
+}
+.version {
+	margin-bottom:0px;
+	padding:0px;
+	height:13px;
+	float:right;
+	margin-right:85px;
+	width:300px;
+	display:inline;
+	text-align:right;
+}
+
+.navItem {
+	margin:3px;
+	width:138px;
+	height:25px;
+	display:inline;
+	float:left;
+	vertical-align:middle;
+}
+.navItem.custom_font {
+	font-family:bankGothic, Verdana, Geneva, sans-serif;
+}
+.navBg {
+	position:absolute;
+	top:107px;
+	left:-200px;
+	width:132px;
+	height:19px;
+	background:url(../images/navBg.jpg);
+	z-index:-5;
+}
+.navItem a{
+	font-family:bankGothic, Verdana, Geneva, sans-serif;
+	color:#bdb6a2;
+	font-size:14px;
+	text-decoration:none;
+}
+.navText {
+	margin-top:5px;
+	height:10px;
+	padding:0px;
+}
+
+.TLcorner {
+	background:url(../images/TLcorner.jpg);
+	width:3px;
+	height:3px;
+	display:inline;
+	float:left;
+}
+.TRcorner {
+	background:url(../images/TRcorner.jpg);
+	width:3px;
+	height:3px;
+	display:inline;
+	float:right;
+}
+.BLcorner {
+	background:url(../images/BLcorner.jpg);
+	width:3px;
+	height:3px;
+	display:inline;
+	float:left;
+	margin-top:7px;
+}
+.BRcorner {
+	background:url(../images/BRcorner.jpg);
+	width:3px;
+	height:3px;
+	display:inline;
+	float:right;
+	margin-top:7px;
+
+}
+.mainContentArea {
+	width:750px;
+	height:452px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:15px;
+	text-align:center;
+	background:url(../images/bgShade.png);
+	background-repeat:repeat;
+	border-style:solid;
+	border-width:thin;
+	overflow:hidden;
+}
+.mainSlider{
+  position:relative;
+  left:0px;
+  width:3760px;
+  height:452px;
+}
+.home {
+	width:720px;
+	height:422px;
+	margin:15px;
+	background:url(../images/bgShade.png);
+	background-repeat:repeat;
+	border-style:solid;
+	border-width:thin;
+	display:inline;
+	float:left;
+	position:relative;
+	
+}
+.portfolio {
+	width:720px;
+	height:422px;
+	margin:15px;
+	background:url(../images/bgShade.png);
+	background-repeat:repeat;
+	border-style:solid;
+	border-width:thin;
+	display:inline;
+	float:left;
+	position:relative;
+	
+}
+.skills {
+	width:720px;
+	height:422px;
+	margin:15px;
+	background:url(../images/bgShade.png);
+	background-repeat:repeat;
+	border-style:solid;
+	border-width:thin;
+	display:inline;
+	float:left;
+	position:relative;
+	
+}
+.bio {
+	width:720px;
+	height:422px;
+	margin:15px;
+	background:url(../images/bgShade.png);
+	background-repeat:repeat;
+	border-style:solid;
+	border-width:thin;
+	display:inline;
+	float:left;
+	position:relative;
+	
+}
+.contact {
+	float:left;
+	margin:15px;
+	width:720px;
+	height:422px;
+	display:inline;
+	vertical-align:middle;
+	background:url(../images/bgShade.png);
+	background-repeat:repeat;
+	border-style:solid;
+	border-width:thin;
+	position:relative;
+	
+}
+
+
+
