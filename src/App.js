@@ -1,14 +1,33 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import MenuIcon from './images/btn-menu.svg';
 import SettingsIcon from './images/btn-settings.svg';
 import './App.css';
 
+import { TweenMax, Bounce } from 'gsap';
+
 function App() {
+  let menuIconAni = useRef(null);
+  console.log(menuIconAni);
+  useEffect(() => {
+    console.log(menuIconAni);
+    TweenMax.from(menuIconAni, 2, {
+      y: -20,
+
+      ease: Bounce.easeOut,
+    });
+  }, []);
+  // console.log(menuIcon);
   return (
     <div className="App">
       <header className="App-header">
         <div className="btn-menu">
-          <img src={MenuIcon} alt="menu" />
+          <img
+            ref={(el) => {
+              menuIconAni = el;
+            }}
+            src={MenuIcon}
+            alt="menu"
+          />
         </div>
         <div className="brand">Graphically Insane</div>
         <div className="btn-settings">
