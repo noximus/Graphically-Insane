@@ -3,11 +3,12 @@ import MenuIcon from './images/btn-menu.svg';
 import SettingsIcon from './images/btn-settings.svg';
 import './App.css';
 
-import { TweenMax, Bounce, Power3 } from 'gsap';
+import { TweenMax, Bounce, Back, Power3 } from 'gsap';
 
 function App() {
   let menuIconAni = useRef(null);
   let pageMenu = useRef(null);
+  let pageOverlay = useRef(null);
   const [menuState, setMenuState] = useState(false);
   useEffect(() => {
     TweenMax.from(menuIconAni, 2, {
@@ -18,17 +19,25 @@ function App() {
 
   function toggleMenu(e) {
     if (menuState === false) {
-      TweenMax.to(pageMenu, 1.5, {
+      TweenMax.to(pageMenu, 2, {
         left: '80%',
         scale: 0.9,
-        ease: Bounce.easeOut,
+        ease: Back.easeOut,
+      });
+      TweenMax.to(pageOverlay, 2, {
+        opacity: 0.5,
+        ease: Power3.easeOut,
       });
       setMenuState(true);
     } else {
-      TweenMax.to(pageMenu, 1.5, {
+      TweenMax.to(pageMenu, 2, {
         left: '0',
         scale: 1,
-        ease: Power3.easeOut,
+        ease: Back.easeOut,
+      });
+      TweenMax.to(pageOverlay, 1, {
+        opacity: 0,
+        ease: Power3.easeIn,
       });
       setMenuState(false);
     }
@@ -41,6 +50,12 @@ function App() {
           pageMenu = el;
         }}
       >
+        <div
+          className="App-overlay"
+          ref={(el) => {
+            pageOverlay = el;
+          }}
+        ></div>
         <header className="App-header">
           <div className="btn-menu">
             <button onClick={toggleMenu}>
