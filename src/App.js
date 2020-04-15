@@ -7,12 +7,9 @@ import { TweenMax, Bounce } from 'gsap';
 
 function App() {
   let menuIconAni = useRef(null);
-  console.log(menuIconAni);
   useEffect(() => {
-    console.log(menuIconAni);
     TweenMax.from(menuIconAni, 2, {
       y: -20,
-
       ease: Bounce.easeOut,
     });
   }, []);
