@@ -1,13 +1,14 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import MenuIcon from './images/btn-menu.svg';
 import SettingsIcon from './images/btn-settings.svg';
 import './App.css';
 
-import { TweenMax, Bounce } from 'gsap';
+import { TweenMax, Bounce, Power3 } from 'gsap';
 
 function App() {
   let menuIconAni = useRef(null);
   let pageMenu = useRef(null);
+  const [menuState, setMenuState] = useState(false);
   useEffect(() => {
     TweenMax.from(menuIconAni, 2, {
       y: -20,
@@ -15,12 +16,22 @@ function App() {
     });
   }, []);
 
-  function openMenu(e) {
-    TweenMax.to(pageMenu, 3, {
-      left: '80%',
-      scale: 0.9,
-      ease: Bounce.easeOut,
-    });
+  function toggleMenu(e) {
+    if (menuState === false) {
+      TweenMax.to(pageMenu, 1.5, {
+        left: '80%',
+        scale: 0.9,
+        ease: Bounce.easeOut,
+      });
+      setMenuState(true);
+    } else {
+      TweenMax.to(pageMenu, 1.5, {
+        left: '0',
+        scale: 1,
+        ease: Power3.easeOut,
+      });
+      setMenuState(false);
+    }
   }
   return (
     <div className="App">
@@ -32,7 +43,7 @@ function App() {
       >
         <header className="App-header">
           <div className="btn-menu">
-            <button onClick={openMenu}>
+            <button onClick={toggleMenu}>
               <img
                 ref={(el) => {
                   menuIconAni = el;
