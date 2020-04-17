@@ -25,25 +25,25 @@ function App() {
 
   function toggleMenu(e) {
     if (menuState === false) {
-      TweenMax.to(pageMenu, 2, {
-        left: '80%',
+      TweenMax.to(pageMenu, 1.5, {
+        left: '65%',
         scale: 0.9,
         ease: Back.easeOut,
       });
-      TweenMax.to(pageOverlay, 2, {
+      TweenMax.to(pageOverlay, 0.5, {
         opacity: 0.5,
         ease: Power3.easeOut,
       });
       setMenuState(true);
     } else {
-      TweenMax.to(pageMenu, 2, {
+      TweenMax.to(pageMenu, 1, {
         left: '0',
         scale: 1,
         ease: Back.easeOut,
       });
-      TweenMax.to(pageOverlay, 1, {
+      TweenMax.to(pageOverlay, 0.5, {
         opacity: 0,
-        ease: Power3.easeIn,
+        ease: Power3.easeInOut,
       });
       setMenuState(false);
     }

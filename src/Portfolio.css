@@ -1,0 +1,60 @@
+.jumbotron {
+  display: grid;
+  gap: 8px;
+  margin: 88px 16px 20px;
+  grid-template-rows: repeat(4, 109px);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    'project1 project2 project3'
+    'project4 project4 project5'
+    'project6 project7 project5'
+    'project8 project9 project10';
+}
+.jumbotron div {
+  background-color: #bce0fd;
+}
+.hero-caro {
+  margin: 0px 16px 20px;
+  text-align: center;
+}
+
+.project1 {
+  background-color: #bce0fd;
+  grid-area: project1;
+}
+.project2 {
+  background-color: #bce0fd;
+  grid-area: project2;
+}
+.project3 {
+  background-color: #bce0fd;
+  grid-area: project3;
+}
+.project4 {
+  background-color: #bce0fd;
+  grid-area: project4;
+}
+.project5 {
+  background-color: #bce0fd;
+  grid-area: project5;
+}
+.project6 {
+  background-color: #bce0fd;
+  grid-area: project6;
+}
+.project7 {
+  background-color: #bce0fd;
+  grid-area: project7;
+}
+.project8 {
+  background-color: #bce0fd;
+  grid-area: project8;
+}
+.project9 {
+  background-color: #bce0fd;
+  grid-area: project9;
+}
+.project10 {
+  background-color: #bce0fd;
+  grid-area: project10;
+}
