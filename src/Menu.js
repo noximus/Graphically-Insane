@@ -21,31 +21,31 @@ const Menu = () => {
         <ul className="menu-nav">
           <li className="menu-nav-items">
             <Link to="/">
-              <div className="menu-nav-item-icon">
+              <span className="menu-nav-item-icon">
                 <FontAwesomeIcon icon={faHome} />
-              </div>
-              <span>Home</span>
+              </span>
+              <span className="menu-nav-item-text">Home</span>
             </Link>
           </li>
           <li className="menu-nav-items">
             <Link to="/portfolio">
-              <div className="menu-nav-item-icon">
+              <span className="menu-nav-item-icon">
                 <FontAwesomeIcon icon={faToiletPaperSlash} />
-              </div>
-              <span>Portfolio</span>
+              </span>
+              <span className="menu-nav-item-text">Portfolio</span>
             </Link>
           </li>
           <li className="menu-nav-items">
-            <div className="menu-nav-item-icon">
+            <span className="menu-nav-item-icon">
               <FontAwesomeIcon icon={faUserNinja} />
-            </div>
-            <span>Profile</span>
+            </span>
+            <span className="menu-nav-item-text">Profile</span>
           </li>
           <li className="menu-nav-items">
-            <div className="menu-nav-item-icon">
+            <span className="menu-nav-item-icon">
               <FontAwesomeIcon icon={faSatellite} />
-            </div>
-            <span>Contact</span>
+            </span>
+            <span className="menu-nav-item-text">Contact</span>
           </li>
         </ul>
       </div>
