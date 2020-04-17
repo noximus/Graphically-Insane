@@ -1,9 +1,15 @@
 import React, { useRef, useEffect, useState } from 'react';
+import { Route, Switch } from 'react-router';
 import MenuIcon from './images/btn-menu.svg';
 import SettingsIcon from './images/btn-settings.svg';
 import './App.css';
 
 import { TweenMax, Bounce, Back, Power3 } from 'gsap';
+import Menu from './Menu';
+import Home from './Home';
+import Portfolio from './Portfolio';
+import Profile from './Profile';
+import Contact from './Contact';
 
 function App() {
   let menuIconAni = useRef(null);
@@ -44,6 +50,7 @@ function App() {
   }
   return (
     <div className="App">
+      <Menu />
       <div
         className="page"
         ref={(el) => {
@@ -73,13 +80,12 @@ function App() {
             <img src={SettingsIcon} alt="settings" />
           </div>
         </header>
-        <div className="body">
-          <div className="jumbotron">
-            <div className="main_img"></div>
-            <div className="second_img"></div>
-            <div className="third_img"></div>
-          </div>
-        </div>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/portfolio" component={Portfolio} />
+          <Route exact path="/profile" component={Profile} />
+          <Route exact path="/contact" component={Contact} />
+        </Switch>
         <footer>
           <div className="footer-nav">
             <div className="icon icon-1">1</div>
