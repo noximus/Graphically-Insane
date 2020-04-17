@@ -52,33 +52,6 @@ button {
   flex-basis: 52px;
   padding: 36px 16px 0 0;
 }
-
-.jumbotron {
-  display: grid;
-  gap: 20px;
-  margin: 88px 16px 20px;
-  grid-template-rows: 200px 156px;
-  grid-template-areas:
-    'main main'
-    'second third';
-}
-.hero-caro {
-  margin: 0px 16px 20px;
-  text-align: center;
-}
-
-.main_img {
-  background-color: #bce0fd;
-  grid-area: main;
-}
-.second_img {
-  background-color: #bce0fd;
-  grid-area: second;
-}
-.third_img {
-  background-color: #bce0fd;
-  grid-area: third;
-}
 footer {
   color: white;
   width: 100%;

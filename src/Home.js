@@ -4,7 +4,7 @@ import './Home.css';
 
 const Home = () => {
   return (
-    <div className="body">
+    <div className="body-home">
       <div className="jumbotron">
         <div className="main_img"></div>
         <div className="second_img"></div>
