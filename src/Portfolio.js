@@ -1,10 +1,31 @@
 import React from 'react';
-import Carousel from './Carousel';
 import './Portfolio.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome } from '@fortawesome/free-solid-svg-icons';
+import { faReact } from '@fortawesome/free-brands-svg-icons';
 
 const Portfolio = () => {
   return (
     <div className="body-portfolio">
+      <div className="filter">
+        <div className="search">
+          <input className="search-input" type="search" name="searchPort" id="search-portfolio" />
+        </div>
+        <div className="filters">
+          <div className="filter-icon">
+            <FontAwesomeIcon icon={faReact} />
+          </div>
+          <div className="filter-icon">
+            <FontAwesomeIcon icon={faHome} />
+          </div>
+          <div className="filter-icon">
+            <FontAwesomeIcon icon={faHome} />
+          </div>
+          <div className="filter-icon">
+            <FontAwesomeIcon icon={faHome} />
+          </div>
+        </div>
+      </div>
       <div className="jumbotron">
         <div className="project1">1</div>
         <div className="project2">2</div>
