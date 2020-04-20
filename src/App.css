@@ -53,22 +53,3 @@ button {
   flex-basis: 52px;
   padding: 36px 16px 0 0;
 }
-footer {
-  color: white;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  background-color: #2699fb;
-  height: 56px;
-}
-
-.footer-nav {
-  display: flex;
-  flex: content;
-}
-
-.icon {
-  flex: 1;
-  text-align: center;
-  padding: 20px;
-}

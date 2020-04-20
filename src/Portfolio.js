@@ -1,8 +1,14 @@
 import React from 'react';
 import './Portfolio.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faSearch, faMicrophone } from '@fortawesome/free-solid-svg-icons';
-import { faReact } from '@fortawesome/free-brands-svg-icons';
+import {
+  faHome,
+  faSearch,
+  faMicrophone,
+  faCode,
+  faBiohazard,
+} from '@fortawesome/free-solid-svg-icons';
+import { faReact, faNodeJs } from '@fortawesome/free-brands-svg-icons';
 
 const Portfolio = () => {
   return (
@@ -15,16 +21,16 @@ const Portfolio = () => {
         </div>
         <div className="filters">
           <div className="filter-icon">
+            <FontAwesomeIcon icon={faCode} />
+          </div>
+          <div className="filter-icon">
             <FontAwesomeIcon icon={faReact} />
           </div>
           <div className="filter-icon">
-            <FontAwesomeIcon icon={faHome} />
+            <FontAwesomeIcon icon={faNodeJs} />
           </div>
           <div className="filter-icon">
-            <FontAwesomeIcon icon={faHome} />
-          </div>
-          <div className="filter-icon">
-            <FontAwesomeIcon icon={faHome} />
+            <FontAwesomeIcon icon={faBiohazard} />
           </div>
         </div>
       </div>

@@ -7,6 +7,7 @@ import './App.css';
 import { TweenMax, Bounce, Back, Power3 } from 'gsap';
 import Menu from './Menu';
 import Home from './Home';
+import Footer from './Footer';
 import Portfolio from './Portfolio';
 import Profile from './Profile';
 import Contact from './Contact';
@@ -88,15 +89,7 @@ function App() {
           <Route exact path="/profile" component={Profile} />
           <Route exact path="/contact" component={Contact} />
         </Switch>
-        <footer>
-          <div className="footer-nav">
-            <div className="icon icon-1">1</div>
-            <div className="icon icon-1">2</div>
-            <div className="icon icon-1">3</div>
-            <div className="icon icon-1">4</div>
-            <div className="icon icon-1">5</div>
-          </div>
-        </footer>
+        <Footer />
       </div>
     </div>
   );
