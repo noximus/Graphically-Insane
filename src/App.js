@@ -9,6 +9,7 @@ import Menu from './Menu';
 import Home from './Home';
 import Footer from './Footer';
 import Portfolio from './Portfolio';
+import Project from './Project';
 import Profile from './Profile';
 import Contact from './Contact';
 
@@ -86,6 +87,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/portfolio" component={Portfolio} />
+          <Route exact path="/project" component={Project} />
           <Route exact path="/profile" component={Profile} />
           <Route exact path="/contact" component={Contact} />
         </Switch>

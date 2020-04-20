@@ -36,6 +36,14 @@ const Menu = () => {
             </Link>
           </li>
           <li className="menu-nav-items">
+            <Link to="/portfolio">
+              <span className="menu-nav-item-icon">
+                <FontAwesomeIcon icon={faToiletPaperSlash} />
+              </span>
+              <span className="menu-nav-item-text">Project</span>
+            </Link>
+          </li>
+          <li className="menu-nav-items">
             <span className="menu-nav-item-icon">
               <FontAwesomeIcon icon={faUserNinja} />
             </span>

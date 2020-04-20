@@ -1,0 +1,29 @@
+.body-Project {
+}
+.body-Project .jumbotron {
+  display: grid;
+  gap: 8px;
+  margin: 88px 16px 16px;
+  grid-template-rows: 208px 109px 164px 109px 1fr;
+}
+.body-Project .hero {
+  background-color: #bce0fd;
+}
+
+.body-Project .dash {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 109px;
+}
+
+.body-Project .dash div {
+  background-color: #f1f9ff;
+}
+
+.body-Project .skills {
+  background-color: #f1f9ff;
+}
+.body-Project .about {
+  background-color: #f1f9ff;
+}

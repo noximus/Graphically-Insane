@@ -1,13 +1,7 @@
 import React from 'react';
 import './Portfolio.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faHome,
-  faSearch,
-  faMicrophone,
-  faCode,
-  faBiohazard,
-} from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faMicrophone, faCode, faBiohazard } from '@fortawesome/free-solid-svg-icons';
 import { faReact, faNodeJs } from '@fortawesome/free-brands-svg-icons';
 
 const Portfolio = () => {
