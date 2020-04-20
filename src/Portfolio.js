@@ -1,7 +1,7 @@
 import React from 'react';
 import './Portfolio.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faSearch, faMicrophone } from '@fortawesome/free-solid-svg-icons';
 import { faReact } from '@fortawesome/free-brands-svg-icons';
 
 const Portfolio = () => {
@@ -9,6 +9,8 @@ const Portfolio = () => {
     <div className="body-portfolio">
       <div className="filter">
         <div className="search">
+          <FontAwesomeIcon className="search-input-icon" icon={faSearch} />
+          <FontAwesomeIcon className="search-input-icon-right" icon={faMicrophone} />
           <input className="search-input" type="search" name="searchPort" id="search-portfolio" />
         </div>
         <div className="filters">

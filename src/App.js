@@ -32,6 +32,7 @@ function App() {
       });
       TweenMax.to(pageOverlay, 0.5, {
         opacity: 0.5,
+        display: 'block',
         ease: Power3.easeOut,
       });
       setMenuState(true);
@@ -43,6 +44,7 @@ function App() {
       });
       TweenMax.to(pageOverlay, 0.5, {
         opacity: 0,
+        display: 'none',
         ease: Power3.easeInOut,
       });
       setMenuState(false);
